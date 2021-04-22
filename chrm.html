@@ -1,0 +1,71 @@
+<head>
+    <title>Google Homepage</title>
+    <link rel="icon" href="G.jpg">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  
+  <body>
+      <!-- GOOGLE IMG   -->
+    <!-- <div class="google">
+        <a href="#" id="google_logo"><img src="http://i1381.photobucket.com/albums/ah215/mzartdesigns/google-logo_zpspkcztsjo.png" alt=" photo google-logo_zpspkcztsjo.png"/></a>
+      </div> -->
+    <header>
+      <nav>
+        <ul id="nav_bar">
+          <li id="sign_in"><a href="https://www.gmail.com/" margin-top="1px">Sign In</a></li>
+        </ul>  
+      </nav>  
+    </header>  
+    <!-- <div class="main">
+        <img src="/home/manii/KEC/PlaCemenT" alt="" class="google">
+        <div class="searchb">
+            <input type="text" name="" placeholder="search Google pr type a URL">
+
+        </div>
+    </div> -->
+    
+    <div class="google" align="center">
+      <!-- <a href="#" id="google_logo"><img src="C:\Users\Windows 10\Desktop\Nikhil.jpg" alt="Wait Image is Loading"/></a> -->
+      <a href="#" id="google_logo"> <img src="google.png" height=120px width=350px alt="google"/></a> 
+    </div>
+
+    
+    <!-- FORM SEARCH -->  
+    <div class="form">  
+      <form id="frmSearch" method="get" />
+        <input type="text" id="txtSearch" placeholder="Feel Free to Search" style="border:1px solid lightgray; width:680px; height:57px; border-radius:30px; user-select: none; outline:none;">
+    </div>  
+    
+    <!-- BUTTONS -->
+    <div class= "buttons">  
+      <button type="submit" class="btn btn-light" value="Google Search" id="google_search" style="font-size: 18; margin-left:10px;">Google Search</button>
+      <button type="submit" class="btn btn-light" value="I'm Feeling Lucky" id="im_feeling_lucky" style="font-size: 18;">I'm Feeling Lucky</button>
+
+      <!--<input type="submit" value="Google Search" id="google_search">-->
+      <!--<input type="submit" value="I'm Feeling Lucky" id="im_feeling_lucky">-->
+    </div>
+
+    <script type="text/javascript">
+      document.getElementById('frmSearch').onsubmit = function() {
+          window.location = 'http://www.google.com/search?q=' + document.getElementById('txtSearch').value;
+          return false;
+      }
+  </script>
+      
+    <!-- FOOTER -->
+    <footer style="clear: both; position: bottom;">
+      <ul class="footer-left"><a href="#">India</a></ul>
+      
+        <ul class="footer-left">
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">About</a></li> 
+        </ul>
+        <ul class="footer-right">    
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>       
+    </footer>      
+  </body>
